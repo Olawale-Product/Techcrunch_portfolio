@@ -12,12 +12,12 @@ select AVG(valuation) as AVERAGE_VALUATION from startups
 group by category;
 
 select ROUND(AVG(valuation),2) as "AVERAGE_VALUATION" from startups;
-group by  ROUND(AVG(valuation),2);
+GROUP BY ROUND(AVG(valuation),2);
 
 
-select ROUND(AVG(valuation),2) as "AVERAGE_VALUATION" from startups
+SELECT ROUND(AVG(valuation),2) as "AVERAGE_VALUATION" FROM startups
 group by ROUND(AVG(valuation),2
-order by AVERAGE_VALUATION DESC;
+ORDER BY AVERAGE_VALUATION DESC;
 
 
 select  name,count(categories) as "categories" from  startups
